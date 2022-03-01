@@ -1,0 +1,17 @@
+server:
+  port: 9090
+spring:   datasource:    username: system
+    password: system
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@localhost:1521/XE
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate.format_sql: true
+reg-app:
+  messages:
+    success: Success
+    fail: Fail
+    ssn-web-url: https://ssa-web-api.herokuapp.com/state/{ssn}
